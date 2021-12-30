@@ -1,0 +1,1041 @@
+<html>
+
+    <head>
+
+	    <title>BBC News</title>
+
+		<style type="text/css">
+		
+		#topbar {
+		
+		   width:1000px;
+		   margin:0 auto;
+		   height:40px;
+		}
+		
+		body {
+		
+		   margin:0;
+		   padding:0;
+		   font-family:Helvetica,Arial,sans-serif;
+		}
+		
+		#logo {
+		
+		margin-top:5px;
+		   width:100px;
+		   float:left;
+		   margin-right:8px;
+		}
+		
+		.topbar-section {
+		
+		   float:left;
+		   border-left:1px #cccccc solid;
+		   height:100%;
+		}
+		
+		#signin-image {
+		
+		   width:25px;
+		   margin:11px 15px;
+		   float:left;
+		}
+		
+		#signin-text {
+		
+		   font-weight:bold;
+		   font-size:90%;
+		   position:relative;
+		   top:14px;
+		   padding-right:50px;
+		}
+		
+		#wigglyline {
+		
+		   float:left;
+		   height:40px;
+		}
+		
+		#bell {
+		   height:20px;
+		   opacity:50%;
+		   margin:9px 8px 0 8px;
+		}
+		
+		#bell-div {
+		
+		   float:left;
+		}
+		
+		.topbar-menu {
+		    
+		   font-weight:bold;
+		   font-size:90%;
+		   padding:13px 15px 0px 15px;
+		   height:27px;
+		}
+
+        #more-arrow {
+		
+		   width:12px;
+		   margin-left:15px;
+		}
+		
+		#search-box {
+		
+		   background-color:#E4E4E4;
+		   border:none;
+		   font-weight:bold;
+		   font-size:14px;
+		   padding:5px;
+		   margin:5px 0px 5px 5px;
+		   float:left;
+		}
+		
+		#magnifying-glass {
+		
+		   height:27px;
+		   margin-top:5px;
+		}
+		
+		.clear {
+		
+		   clear:both;
+		}
+		
+		#menu-bar-container {
+		
+		   border-top:1px solid #cccccc;
+		   background-color:#BB1919;
+		   width:100%;
+		   height:70px;
+		}
+		
+		#menu-bar{
+		
+		   width:1000px;
+		   margin:0 auto;
+		}
+		
+		h1{
+		
+		   padding:0;
+		   margin:0;
+		   color:white;
+		   font-weight:normal;
+		   font-size:40px;
+		   padding-top:10px;
+		   float:left;
+		}
+		
+		#local-news {
+		
+		   border:1px #BB4545 solid;
+		   float:right;
+		   width:180px;
+		   padding:5px 5px 0px 10px;
+		   margin:20px 10px 0 0;
+		
+		}
+		
+		#local-news a {
+		
+		   color:white;
+		   text-decoration:none;
+		   font-size:20px;
+		   position:relative;
+		   top:-5px;
+		}
+		
+		#local-news a:hover {
+		
+		   text-decoration:underline;
+		}
+		
+		#local-news img {
+		
+		   height:20px;
+		}
+		
+		#menu-bar-2-container {
+		
+		   background-color:#A91717;
+		   width:100%;
+		}
+		
+		#menu-bar-2 {
+		
+		   width:1000px;
+		   margin:0 auto;
+		   height:40px;
+		}
+		
+		#menu-bar-2 a {
+		
+		   color:white;
+		   text-decoration:none;
+		   padding:0 10px;
+		   border-right:1px solid #BB4545;
+		   font-size:14px;
+		   position:relative;
+		   top:10px;
+		}
+		
+		#menu-bar-2 a:hover {
+		
+		   text-decoration:underline;
+		}
+		
+		.no-border {
+		
+		   border:none !important;
+		}
+		
+		#down-arrow {
+		
+		   height:12px;
+		   position:relative;
+		   top:10px;
+		}
+		
+		#page-container{
+		
+		   width:1000px;
+		   margin:0 auto;
+		   
+		}
+		
+		h2{
+		
+		   font-weight:normal;
+		   margin-top:40px;
+		   font-size:20px;
+		   border-bottom:3px solid #a91717;
+		   width:105px;
+		   
+		}
+		
+		h3 a{
+		
+		   color:black;
+		   font-size:30px;
+		   text-decoration:none;
+		   
+		}
+		
+		h3 a:hover{
+		
+		   color:#1167a8;
+		}
+		
+		#article-summary {
+		
+		   color:#5a5a5a;
+		   width:250px;
+		   float:left;
+		}
+		
+		.clock{
+		
+		   height:13px;
+		   position:relative;
+		   top:1px;
+		}
+		
+		.topic-link{
+		
+		   text-decoration:none;
+		   color:#a91717;
+		   border-left:1px solid #cccccc;
+		   padding-left:7px;
+		   font-size:14px;
+		}
+		
+		.date{
+		
+		   font-size:13px;
+		   padding-right:7px;
+		   color:#5a5a5a;
+		}
+		
+		#article-container{
+		
+		   float:left;
+		   width:670px;
+		   border-right:1px solid #cccccc;
+		   padding:15px 22px 30px 0;
+		   border-bottom:1px solid #cccccc;
+		}
+		
+		#main-article-image{
+		
+		   width:400px;
+		   margin-left:20px;
+		}
+		
+		.article-hr{
+		
+		   border-top:1px solid #a91717;
+		   width:50px;
+		
+		}
+		
+		.article-link{
+		
+		   color:black;
+		   text-decoration:none;
+		}
+		
+		.article-link:hover{
+		
+		   color:#1167a8;
+		
+		}
+		
+		#watch-listen{
+		
+		   margin-left:5px;
+		   width:280px;
+		   float:right;
+		
+		}
+		
+		h4{
+		
+		   font-weight:normal;
+		   font-size:20px;
+		}
+		
+		#article-side-image {
+		
+		   float:left;
+		   width:90px;
+		   margin-right:10px;
+		}
+		
+		.watch-listen-link{
+		
+		   text-decoration:none;
+		   color:black;
+		   font-weight:bold;
+		   font-size:18px;
+		
+		}
+		
+		.watch-listen-link:hover{
+		
+		   color:#1167a8;
+		}
+		
+		.side-article{
+		
+		   float:right;
+		   width:180px;
+		   position:relative;
+		   top:-18px;
+		}
+		
+		.no-border{
+		
+		   border-left:none;
+		   padding:0;
+		}
+		
+		.border-right{
+		
+		   border-right:1px solid #cccccc;
+		}
+		
+		#sub-article-container{
+		
+		   float:left;
+		   padding-top:50px;
+		   
+		
+		}
+		
+		
+		
+		.sub-article{
+		
+		   width:210px;
+		   border-right:1px solid #cccccc;
+		   padding:10px 10px 10px 10px;
+		   float:left;
+		   margin-bottom:20px;
+		}
+		
+		#sub-article-img{
+		
+		   width:200px;
+		
+		}
+		
+		.sub-article-link{
+		
+		   text-decoration:none;
+		   color:black;
+		   font-weight:bold;
+		   font-size:20px;
+		}
+		
+		.sub-article-link:hover{
+		
+		   color:#1167a8;
+		
+		}
+		
+		.centre-article{
+		
+		   border-right:1px solid #cccccc;
+		   border-left:1px solid #cccccc;
+		   padding:10 10px 15px 10px;
+		
+		}
+		
+		#page-container2{
+		
+		   width:500px;
+		   margin:0 auto;
+		}
+		
+		#latest-updates{
+		
+		   font-weight:bold;
+		   font-size:25px;
+		   width:100%;
+		   border-top:1px solid black;
+		   margin-top:50px;
+		   
+		
+		
+		}
+		
+		.latest-article{
+		
+		   border-bottom:1px solid #cccccc;
+		   padding-bottom:20px;
+		
+		}
+		
+		.latest-article-link{
+		
+		   text-decoration:none;
+		   color:black;
+		   font-weight:bold;
+		   font-size:21px;
+		}
+		
+		.latest-article-link:hover{
+		
+		   color:#1167a8;
+		}
+		
+		#latest-article-img{
+		
+		   float:left;
+		   width:300px;
+		   margin-right:20px;
+		
+		}
+		
+		.read-more{
+		
+		   border:1px solid #cccccc;
+		   width:110px;
+		   margin-top:20px;
+		}
+		
+		.read-more a{
+		
+		   text-decoration:none;
+		   color:black;
+		   font-weight:bold;
+		   font-size:15px;
+		   padding:5px 0 10px 5px;
+		   position:relative;
+		   top:-4px;
+		   
+		}
+		
+		.read-more a:hover{
+		
+		   text-decoration:underline;
+		
+		}
+		
+		.read-more img{
+		
+		   width:12px;
+		   margin-left:5px;
+		   
+		
+		}
+		
+		.social-media{
+		
+		   width:150px;
+		
+		}
+		
+		#contact-me{
+		
+		   background-color:#2F2F2F;
+		
+		}
+		
+		#find-me{
+		
+		   color:white;
+		   font-weight:bold;
+		   font-size:25px;
+		   margin-top:50px;
+		   padding:5px 0 5px 10px;
+		   
+		}
+		
+		.account img{
+		
+		   width:60px;
+		   position:relative;
+		   bottom:-20px;
+		
+		}
+		
+		.account a{
+		
+		   text-decoration:none;
+		   color:black;
+		   font-weight:bold;
+		   font-size:13px;
+		   position:relative;
+		   top:-20px;
+		}
+		
+		.account a:hover{
+		
+		   color:red;
+		   text-decoration:underline;
+		
+		}
+		
+		#blank{
+		
+		width:100%;
+		background-color:#4C4C4C;
+		height:100px;
+		
+		}
+		
+		
+		
+		
+		
+		
+		</style>
+
+	</head>
+
+	<body>
+	
+	    <div id="topbar">
+		
+		    <img id="logo" src="images/bbc-Logo.png">
+			
+			<div id="signin-div" class="topbar-section">
+			
+			   <img id="signin-image" src="images/sign in logo.png">
+			   
+			   <span id="signin-text">Sign in</span>			
+			
+			</div>
+			
+			<div id="bell-div">
+			
+			   <img id="wigglyline" src="images/wigglyline.png">
+			   <img id="bell" src="images/bell.png">
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   News
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   Sport
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   Weather
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   iPlayer
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   TV
+			
+			</div>
+			
+			<div class="topbar-section topbar-menu">
+			
+			   More
+			   
+			   <img id="more-arrow" src="images/more-arrow.jpg">
+			
+			</div>
+			
+			<div class="topbar-section">
+			
+			    <input id="search-box" type="text" placeholder="Search">
+				
+				<input type="image" id="magnifying-glass"src="images/magnifying-glass.png">
+				
+			</div>
+			
+		</div>
+			
+			<div class="clear"></div>
+			
+		<div id="menu-bar-container">
+			
+			<div id="menu-bar">
+			
+			    <h1>NEWS</h1>
+			   
+			    <div id="local-news">
+				
+				   <a href="">Find local news</a>
+				   
+				   <img src="images/pointer2.png">
+				
+				</div>
+			
+			</div>
+			
+			  <div class="clear"></div>
+			
+			<div id="menu-bar-2-container">
+			
+			    <div id="menu-bar-2">
+				
+				    <a href="">Home</a>
+					
+					<a href="">UK</a>
+					
+					<a href="">World</a>
+					
+					<a href="">Business</a>
+					
+					<a href="">Politics</a>
+					
+					<a href="">Tech</a>
+					
+					<a href="">Science</a>
+					
+					<a href="">Health</a>
+					
+					<a href="">Education</a>
+					
+					<a href="">Entertainment & Arts</a>
+					
+					<a href="">Video & Audio</a>
+					
+					<a class="no-border" href="">More</a>
+					
+				  <img id="down-arrow" src="images/Down arrow.png">
+					
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="page-container">
+		
+		    <div id="main-article">
+			
+			    <h2>Technology</h2>
+				
+				<div id="article-container">
+					
+					<h3><a href="https://www.bbc.com/news/technology-54552101">Biden article reignites social media bias claims</a></h3>
+					
+					<div id="article-summary">
+					
+						<p>Twitter's chief says the way it communicated its decision to restrict an article was "unacceptable".</p>
+					   
+						<p><img class="clock" src="images/clock.png"> <span class="date">15 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+						
+						<hr class="article-hr" align="left">
+						
+						<p><a class="article-link" href="">Big Tech: Between a rock and a hard place</a></p>
+                        
+						<p><a class="article-link" href="">eBay flaw has existed for months</a></p>
+						
+					</div>
+					
+					<a href="https://www.bbc.com/news/technology-54552101"><img id="main-article-image" src="New.images/main-article-image.png"></a>
+				
+				</div>
+				
+			</div>
+			
+			<div id="watch-listen">
+
+			   <h4>Watch/Listen</h4>
+			   
+			   <img id="article-side-image" src="New.images/article1.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.com/news/election-us-2020-54533488">Twitter suspends fake Trump supporter accounts</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date">14 October 2020</span></p>
+				   
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img id="article-side-image" src="New.images/article2.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.com/news/technology-54510363">Why iPhone 12 marks dawn of a new chip technology</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date border-right">13 October 2020</span> <br> <a class="topic-link no-border" href="">Technology</a></p>
+				   
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img id="article-side-image" src="New.images/article3.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.com/news/technology-54526515">Drone used to bust drug deal in China</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date border-right">14 October 2020</span> <br> <a class="topic-link no-border" href="">Technology</a></p>
+				   
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img id="article-side-image" src="New.images/article4.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.com/news/science-environment-54534012">Bezos' rocket tests Nasa Moon landing tech</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date border-right">14 October 2020</span> <br> <a class="topic-link no-border" href="">Science & Environment</a></p>
+				   
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img id="article-side-image" src="New.images/article5.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.com/news/technology-54438143">Women in technology: '2020 has been a hard slog'</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date border-right">13 October 2020</span> <br> <a class="topic-link no-border" href="">Technology</a></p>
+				   
+				</div>
+				
+				<div class="clear"></div>
+				
+				<img id="article-side-image" src="New.images/article6.png">
+			   
+			    <div class="side-article">
+			   
+				   <p><a class="watch-listen-link" href="https://www.bbc.co.uk/programmes/articles/5pyH2yY5Gn8vRyBSNHkGXVl/fifa-21-review-the-virtual-beautiful-game-is-passing-off-old-as-new">Fifa 21 review: 'Uninspiring but fun'</a></p>
+				   
+				   <p><img class="clock" src="images/clock.png"> <span class="date border-right">13 October 2020</span> <br> <a class="topic-link no-border" href="">Sports</a></p>
+				   
+				</div>
+			
+			</div>
+			
+			<div id="sub-article-container">	
+				
+				<div class="sub-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article1.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/technology-54538849">Google robots will roam fields inspecting crops</a></p>
+					
+					<p>The project will analyse every leaf on every crop, helping farmers tend the fields.</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">14 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+				<div class="sub-article centre-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article2.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/technology-54541517">YouTube bans misleading Covid-19 vaccine videos</a></p>
+					
+					<p>The initiative follows Facebook's earlier pledge to ban ads that discourage vaccinations.</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">14 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+				<div class="sub-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article3.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/world-us-canada-54552380">'Mystery jetpack-wearer' spotted again in LA skies</a></p>
+					
+					<p>The new sighting on Wednesday was at 6,000ft (1,829m), seven miles from the airport, officials say.</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">15 October 2020</span> <a class="topic-link" href="">US & Canada</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div class="sub-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article4.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/technology-54538854">Zoom launches paid-for live events</a></p>
+					
+					<p>OnZoom, a live-events platform, will sell tickets for "online experiences".</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">15 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+				<div class="sub-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article5.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/technology-54510361">iPhone 12: Apple makes jump to 5G</a></p>
+					
+					<p>The new iPhone line-up could trigger a "super-cycle" of consumer upgrades.</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">14 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+				<div class="sub-article">
+				   
+					<img id="sub-article-img" src="New.images/sub-article6.png">
+					
+					<p><a class="sub-article-link" href="https://www.bbc.com/news/av/technology-54451401">How to win at video conferencing</a></p>
+					
+					<p>LJ Rich looks at the tips and tricks to help you make video calls like an expert.</p>
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">14 October 2020</span> <a class="topic-link" href="">Technology</a></p>
+					
+					<hr class="article-hr" align="left">
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div id="page-container2">
+		
+		    <div id="latest-updates"><p>Latest Updates</p></div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">2 hours</span></p>
+					
+					<p><a class="latest-article-link" href="https://www.bbc.com/news/technology-54568784">British Airways fined £20m over data breach</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest1.png">
+					
+					<p>The fine is the largest ever issued by the Information Commissioner's Office.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/technology-54568784">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">3 hours</span></p>
+					
+					<p><a class="latest-article-link" href="">Twitter suffers major platform outage</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest2.png">
+					
+					<p>The company says the issue was caused by an "inadvertent change" it made to its internal systems.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/technology-54564556">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">3 hours</span></p>
+					
+					<p><a class="latest-article-link" href="">'We are in our skin for life, not for likes'</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest3.png">
+					
+					<p>Can the use of Instagram filters - which change the tone, colour and shape of your face - be a form of racial discrimination?</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/uk-england-london-54360146">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">4 hours</span></p>
+					
+					<p><a class="latest-article-link" href="https://www.bbc.com/news/business-54416696">New jets promise to revive supersonic travel</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest4.png">
+					
+					<p>Almost 20 years after Concorde was retired, new supersonic passenger aircraft are finally emerging.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/business-54416696">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">4 hours</span></p>
+					
+					<p><a class="latest-article-link" href="https://www.bbc.com/news/technology-54562802">YouTube cracks down on QAnon conspiracy theory</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest5.png">
+					
+					<p>The social media site says it is taking tougher action to "curb hate and harassment" on its platform.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/technology-54562802">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">5 hours</span></p>
+					
+					<p><a class="latest-article-link" href="https://www.bbc.com/news/entertainment-arts-54551342">MPs to investigate how artists are paid for streams</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest6.png">
+					
+					<p>A new inquiry will examine whether artists and songwriters are paid fairly by services like Spotify.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/entertainment-arts-54551342">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+			
+			<div class="latest-article">
+					
+					<p><img class="clock" src="images/clock.png"> <span class="date">6 hours</span></p>
+					
+					<p><a class="latest-article-link" href="https://www.bbc.com/news/uk-wales-54539248">Broadband firm expands creating 140 jobs</a></p>
+					
+					<img id="latest-article-img" src="New.images/latest7.png">
+					
+					<p>Spectrum says it hopes to push its ultrafast fibre network to "at least 150,000" Welsh homes.</p>
+					
+					<hr class="article-hr" align="left">
+					
+					<div class="clear"></div>
+					
+					<div class="read-more"><a href="https://www.bbc.com/news/uk-wales-54539248">Read More</a><img src="New.images/read-more-aerrow.png"></div>
+					
+					<img class="social-media"src="New.images/social-media.png">
+					
+			</div>
+		
+		</div>
+		
+		<div id="page-container">
+		
+		    <div id="contact-me">
+			
+				<p id="find-me">Find me here</p>
+				
+			</div>
+			
+			    <div class="account">
+				
+				<p><a href=""><img src="New.images/insta.png">its_j_u_s_t</a></p>
+				
+				<p><a href="https://twitter.com/AbhiPtdr"><img src="New.images/twitter.png">abhi_ptdr</a></p>
+				
+				<p><a href="https://www.facebook.com/abhishekpatidar.pateliya/"><img src="New.images/fb.png">Abhishek Patidar </a></p>
+				
+				</div>
+		
+		</div>
+		
+		<div id="blank">
+		
+		</div>
+			
+	</body>
+
+</html>
+
+http://abhiptdrclonebbcnews-com.stackstaging.com/
